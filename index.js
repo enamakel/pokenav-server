@@ -32,6 +32,13 @@ var dashboard = new ParseDashboard({
       "masterKey": "2Y4W653anBERrC39H4Jo1vf44HV8P58e",
       "appName": "PokeNav"
     }
+  ],
+
+  "users" : [
+    {
+      "user":"sumod",
+      "pass":"RrC39H4Jo1RrC39H4Jo1"
+    }
   ]
 }, allowInsecureHTTP);
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
