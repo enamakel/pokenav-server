@@ -17,7 +17,7 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'pokenav',
   masterKey: process.env.MASTER_KEY || '2Y4W653anBERrC39H4Jo1vf44HV8P58e', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:3000/parse',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'http://pokenav.schoolofandroid.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
@@ -27,7 +27,7 @@ var allowInsecureHTTP = true;
 var dashboard = new ParseDashboard({
   "apps": [
     {
-      "serverURL": "http://localhost:3000/parse",
+      "serverURL": "http://pokenav.schoolofandroid.com/parse",
       "appId": "pokenav",
       "masterKey": "2Y4W653anBERrC39H4Jo1vf44HV8P58e",
       "appName": "PokeNav"
