@@ -60,7 +60,7 @@ app.get('/test', function(req, res) {
 // make the Parse Dashboard available at /dashboard
 app.use('/dashboard', dashboard);
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 3000;
 var httpServer = require('http').createServer(app);
 httpServer.listen(port, "0.0.0.0", function() {
     console.log('parse-server-example running on port ' + port + '.');
